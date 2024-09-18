@@ -101,11 +101,11 @@ export class ResultsTester<T extends string> {
       const humanReadableResult = (result * 100).toFixed(2);
       !isTestPassed
         ? console.log(
-            `${eventName} results failed with ${humanReadableResult} (required ${TEST_PASS_RATE})`
-          )
+          `${eventName} results failed with ${humanReadableResult} (required ${TEST_PASS_RATE})`
+        )
         : console.log(
-            `${eventName} results passed with ${humanReadableResult}`
-          );
+          `${eventName} results passed with ${humanReadableResult}`
+        );
     }
 
     return testPassed;
